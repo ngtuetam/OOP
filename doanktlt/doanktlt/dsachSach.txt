@@ -1,0 +1,12 @@
+01
+Ky thuat lap trinh
+Dao Duy Tuan
+10000
+02
+Truong dien tu
+Vo Duy Phuc
+90000
+03
+Tin hieu he thong
+Le Thi Phuong Mai
+80000

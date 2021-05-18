@@ -18,13 +18,54 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Date.cpp">
+    <ClCompile Include="Ngay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hethongthuvien.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TheSach.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sach.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DocGia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThuVien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Date.h">
+    <ClInclude Include="Ngay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Hethongthuvien.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TheSach.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sach.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DocGia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ThuVien.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dsachSach.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="dsachDocgia.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="dsachThe.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
