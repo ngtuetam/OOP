@@ -6,14 +6,14 @@ using namespace std;
 
 
 void gioithieu() {
-	cout << "\t\t\t\t\t________________________________________________________ \n";
-	cout << "\t\t\t\t\t*               PBL1: KY THUAT LAP TRINH                *\n";
-	cout << "\t\t\t\t\t*              PHAN MEM QUAN LI THU VIEN                *\n";
-	cout << "\t\t\t\t\t*              SINH VIEN    : NGUYEN TUE TAM            *\n";
-	cout << "\t\t\t\t\t*                             TRAN PHUC THINH           *\n";
-	cout << "\t\t\t\t\t*                             NGUYEN VAN AN             *\n";
-	cout << "\t\t\t\t\t*              GIANG VIEN : TS.DAO DUY TUAN             *\n";
-	cout << "\t\t\t\t\t_________________________________________________________\n\n\n";
+	cout << "\t\t\t\t\t__________________________________________________________\n";
+	cout << "\t\t\t\t\t*               PBL1: KY THUAT LAP TRINH                 *\n";
+	cout << "\t\t\t\t\t*              PHAN MEM QUAN LI THU VIEN                 *\n";
+	cout << "\t\t\t\t\t*              SINH VIEN     : NGUYEN TUE TAM            *\n";
+	cout << "\t\t\t\t\t*                              TRAN PHUC THINH           *\n";
+	cout << "\t\t\t\t\t*                              NGUYEN VAN AN             *\n";
+	cout << "\t\t\t\t\t*              GIANG VIEN HD : TS.DAO DUY TUAN           *\n";
+	cout << "\t\t\t\t\t__________________________________________________________\n\n\n";
 }
 
 int main()
@@ -23,7 +23,7 @@ int main()
 	do {
 		system("cls");
 		gioithieu();
-		cout << "\t____________________________________________________________________" << endl;
+		cout << "\t_____________________________________________________________________" << endl;
 		cout << "\t|_____________________________SACH__________________________________|" << endl;
 		cout << "\t| 1. Nhap,them sach                                                 |" << endl;
 		cout << "\t| 2. Xuat danh sach sach                                            |" << endl;
@@ -35,7 +35,7 @@ int main()
 		cout << "\t|6. Xuat danh sach doc gia                                          |" << endl;
 		cout << "\t|7. Tim kiem doc gia theo ID                                        |" << endl;
 		cout << "\t|8. Tim kiem doc gia theo ho ten                                    |" << endl;
-		cout << "\t|___________________________________________________________________|"  << endl;
+		cout << "\t|___________________________________________________________________|" << endl;
 		cout << "\t|_________________________PHIEU MUON TRA____________________________|" << endl;
 		cout << "\t|9. Nhap, them phieu muon/tra sach                                  |" << endl;
 		cout << "\t|10. Xuat phieu muon/tra sach                                       |" << endl;
@@ -44,7 +44,7 @@ int main()
 		cout << "\t|0. Thoat chuong trinh                                              |" << endl;
 		cout << "\t|___________________________________________________________________|" << endl;
 
-		cout << "\nVui long phuong thuc: ";
+		cout << "\nVui long chon phuong thuc: ";
 		cin >> choose;
 		cout << endl;
 		switch (choose)

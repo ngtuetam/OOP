@@ -94,5 +94,5 @@ void Sach::nhaptufile(ifstream& is)
 
 void Sach::xuatsangfile(ofstream& os)
 {
-	os << idsach << "\n"  << tensach << "\n" << tacgia << "\n" << giasach << endl;
+	os << idsach << "\n" << tensach << "\n" << tacgia << "\n" << giasach << endl;
 }

@@ -6,7 +6,7 @@ Dao Duy Tuan
 Truong dien tu
 Vo Duy Phuc
 90000
-03
+04
 Tin hieu he thong
 Le Thi Phuong Mai
-80000
+70000

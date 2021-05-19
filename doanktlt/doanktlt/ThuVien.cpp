@@ -20,18 +20,18 @@ void ThuVien::xuat_doctufilesach(ifstream& is)
 {
 	system("cls");
 	cout << "XUAT RA DANH SACH CAC CUON SACH VA DOC TU FILE VAO\n" << endl;
-    cout << "\nDanh sach cac cuon sach: " << endl;                                // xuat ra danh sach cac cuon sach duoc nhap vao tu ban phim
+	cout << "\nDanh sach cac cuon sach: " << endl;                                // xuat ra danh sach cac cuon sach duoc nhap vao tu ban phim
 	cout << endl;
 	for (int i = 0; i < dsachsach.size(); i++)
 	{
 		dsachsach[i].xuat();
 		cout << "\n******************************************" << endl;
 	}
-    cout << "\nDanh sach cac cuon sach doc tu file dsachSach.txt\n" << endl;      // xuat ra cac cuon sach co san tu file dsacHSach.txt
+	cout << "\nDanh sach cac cuon sach doc tu file dsachSach.txt\n" << endl;      // xuat ra cac cuon sach co san tu file dsacHSach.txt
 	while (true)
 	{
-        Sach temp;
-        string idsach, tensach, tacgia;      // khai bao cac bien
+		Sach temp;
+		string idsach, tensach, tacgia;      // khai bao cac bien
 		double giasach;
 
 		getline(is, idsach);                //nhap vao cac thong tin tu file
@@ -47,9 +47,10 @@ void ThuVien::xuat_doctufilesach(ifstream& is)
 		cout << "Ten sach: " << tensach << endl;
 		cout << "Ten tac gia: " << tacgia << endl;
 		cout << "Gia tien cua sach: " << giasach << endl;
-        cout << "\n******************************************" << endl;
+		cout << "\n******************************************" << endl;
 	}
 }
+
 
 void ThuVien::TimsachbangID()
 {
