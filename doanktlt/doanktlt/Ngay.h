@@ -27,9 +27,9 @@ public:
 
 	bool namnhuan(int);                                 // kiem tra nam nhuan
 	bool ngayhople(int, int, int);                      // kiem tra ngay hop le
-	int ngaytrongthang(int, int);                        // tinh so ngay trong thang
-
-
+	int ngaytrongthang(int, int);                        // tra ve so ngay trong thang tung thang
+	void ngaytruocdo(int&, int&, int&);                  // tinh ngay truoc do
+	int tinhngay(Ngay);
 };
 
 #endif

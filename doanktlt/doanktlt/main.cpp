@@ -24,19 +24,19 @@ int main()
 		system("cls");
 		gioithieu();
 		cout << "\t_____________________________________________________________________" << endl;
-		cout << "\t|_____________________________SACH__________________________________|" << endl;
+		cout << "\t|________________________________SACH_______________________________|" << endl;
 		cout << "\t| 1. Nhap,them sach                                                 |" << endl;
 		cout << "\t| 2. Xuat danh sach sach                                            |" << endl;
 		cout << "\t| 3. Tim kiem sach theo ID                                          |" << endl;
 		cout << "\t| 4. Tim kiem sach theo ten sach                                    |" << endl;
 		cout << "\t|___________________________________________________________________|" << endl;
-		cout << "\t|___________________________ DOC GIA________________________________|" << endl;
+		cout << "\t|______________________________ DOC GIA_____________________________|" << endl;
 		cout << "\t|5. Nhap, them doc gia                                              |" << endl;
 		cout << "\t|6. Xuat danh sach doc gia                                          |" << endl;
 		cout << "\t|7. Tim kiem doc gia theo ID                                        |" << endl;
 		cout << "\t|8. Tim kiem doc gia theo ho ten                                    |" << endl;
 		cout << "\t|___________________________________________________________________|" << endl;
-		cout << "\t|_________________________PHIEU MUON TRA____________________________|" << endl;
+		cout << "\t|____________________________PHIEU MUON TRA_________________________|" << endl;
 		cout << "\t|9. Nhap, them phieu muon/tra sach                                  |" << endl;
 		cout << "\t|10. Xuat phieu muon/tra sach                                       |" << endl;
 		cout << "\t|11. Nhap danh sach doc gia muon qua han va tien phat               |" << endl;
@@ -52,10 +52,10 @@ int main()
 		case 1:
 		{
 			system("cls");
-			ofstream sachngoaifile("dsachSach.txt", std::ios_base::app);
-			if (!sachngoaifile.fail())
+			ofstream sachngoaifile("dsachSach.txt", std::ios_base::app);          // ios_base::app :chon mode noi tep, nghia la ghi vao cuoi tep
+			if (!sachngoaifile.fail())                                            // lop ostream: ghi file
 			{
-				lib.nhap_luuvaofilesach(sachngoaifile);
+				lib.nhap_luuvaofilesach(sachngoaifile);                           
 				sachngoaifile.close();
 			}
 			else
@@ -162,9 +162,25 @@ int main()
 			system("pause");
 			break;
 		}
+		case 11:
+		{
+			ifstream danhsachtre("dsachThe.txt");
+			if (!danhsachtre.fail())
+			{
+				lib.xuat_docdstrehan(danhsachtre);
+				danhsachtre.close();
+			}
+			else
+				cout << "Khong mo duoc file";
 
-
-
+			system("pause");
+			break;
 		}
+		case 0:
+		{
+			break;
+		}
+
+        }
 	} while (choose != 0);
 }

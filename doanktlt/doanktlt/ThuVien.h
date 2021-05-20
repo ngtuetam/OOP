@@ -17,8 +17,12 @@ private:
 	vector<DocGia> dsachdocgia;
 	vector<TheSach> dsachthe;
 public:
-	void nhap_luuvaofilesach(ofstream&);         // nhap sach vao danh sach cac cuon sach va luu vao file
-	void xuat_doctufilesach(ifstream&);          // xuat ra danh sach cac cuon sach va doc tu file vao
+	
+	
+
+    void nhap_luuvaofilesach(ofstream&);         // nhap sach vao danh sach cac cuon sach va luu vao file
+	void xuat_doctufilesach(ifstream&);           // xuat ra danh sach cac cuon sach va doc tu file vao
+	void xoasach();                                //xoa sach   
 	void TimsachbangID();                        // ham tim sach bang ID
 	void Timsachbangtensach();                   // ham tim sach bang ten sach
 

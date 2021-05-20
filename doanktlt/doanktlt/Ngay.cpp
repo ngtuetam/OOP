@@ -110,7 +110,7 @@ bool Ngay::namnhuan(int nam)                       // kiem tra nam nhuan
 	return false;
 }
 
-bool Ngay::ngayhople(int ngay, int thang, int nam)           // kiem tra ngay hop le
+bool Ngay::ngayhople(int ngay, int thang, int nam)           // kiem tra ngay hop le hay khong
 {
 	if (nam < 1950)
 		return false;
@@ -154,8 +154,8 @@ bool Ngay::ngayhople(int ngay, int thang, int nam)           // kiem tra ngay ho
 	}
 }
 
-int Ngay::ngaytrongthang(int thang, int nam)
-{
+int Ngay::ngaytrongthang(int thang, int nam)                        //tra ve so ngay trong tung thang
+{                                                                   // thang 1: 31 ngay
 	switch (thang)
 	{
 	case 1:case 3:case 5:case 7:case 8:case 10: case 12:
@@ -171,6 +171,46 @@ int Ngay::ngaytrongthang(int thang, int nam)
 		return 0;
 	}
 }
+
+void Ngay::ngaytruocdo(int& day, int& month, int& year)
+{
+	if (ngayhople(day, month, year) == true)
+	{
+		day--;
+		if (day == 0)
+		{
+			month--;
+			if (month == 0)
+			{
+				year--;
+				month = 12;
+				day = 31;
+			}
+			else
+				day = ngaytrongthang(month, year);
+		}
+	}
+}
+
+
+int Ngay::tinhngay(Ngay thatdate)
+{
+	int count = 0;
+	int d = ngay;
+	int m = thang;
+	int y = nam;
+	if (ngayhople(d, m, y) == true)
+	{
+		while (d != thatdate.ngay || m != thatdate.thang || y != thatdate.nam)
+		{
+			ngaytruocdo(d, m, y);
+			count++;
+		}
+	}
+	return count;
+}
+
+
 
 
 

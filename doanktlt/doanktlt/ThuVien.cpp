@@ -1,4 +1,7 @@
 #include "ThuVien.h"
+#include<iomanip>
+
+
 
 
 void ThuVien::nhap_luuvaofilesach(ofstream& os)
@@ -6,9 +9,10 @@ void ThuVien::nhap_luuvaofilesach(ofstream& os)
 	system("cls");
 	cout << "NHAP VAO DANH SACH CAC CUON SACH VA LUU VAO FILE" << endl;           // nhap sach vao va luu vao file
 	cout << endl;
-    Sach book;
+    Sach book;                                                                   
 	book.nhap();
 	dsachsach.push_back(book);
+	
 
 	for (int i = 0; i < dsachsach.size(); i++)
 	{
@@ -46,10 +50,28 @@ void ThuVien::xuat_doctufilesach(ifstream& is)
 		cout << "Ma sach: " << idsach << endl;             // xuat cac thong tin doc tu file 
 		cout << "Ten sach: " << tensach << endl;
 		cout << "Ten tac gia: " << tacgia << endl;
-		cout << "Gia tien cua sach: " << giasach << endl;
+		cout << "Gia tien cua sach: "<< fixed << setprecision(0) << giasach << endl;
 		cout << "\n******************************************" << endl;
 	}
 }
+
+void xoasach(int counter) 
+{
+	system("cls");
+	string id;
+	cout << "Nhap ID sach can xoa: ";
+	cin.ignore();
+	getline(cin, id);
+
+	
+}
+
+
+
+
+
+
+
 
 
 void ThuVien::TimsachbangID()
@@ -342,6 +364,43 @@ void ThuVien::xuat_doctufilethe(ifstream& is)
 		cout << "Ten cua sach muon: " << tensachmuon << endl;
 		cout << "Ngay muon sach: " << ngaymuon << endl;
 		cout << "Ngay tra sach: " << ngaytra << endl;
+
+		cout << "******************************************" << endl;
+	}
+}
+
+void ThuVien::xuat_docdstrehan(ifstream& is)
+{
+	system("cls");
+	cout << "Danh sach nhung nguoi muon sach qua han" << endl;
+	cout << endl;
+
+	while (true)
+	{
+		string idnguoimuon, tennguoimuon, idsachmuon, tensachmuon;
+		Ngay ngaymuon, ngaytra;
+
+		getline(is, idnguoimuon);
+		getline(is, tennguoimuon);
+		getline(is, idsachmuon);
+		getline(is, tensachmuon);
+		if (is.eof())
+			break;
+		nhapngaytufile(is, ngaymuon);
+		nhapngaytufile(is, ngaytra);
+		is.ignore();
+
+		if (ngaytra.tinhngay(ngaymuon) > 7)
+		{
+			cout << "ID cua nguoi muon sach: " << idnguoimuon << endl;
+			cout << "Ho ten nguoi muon sach: " << tennguoimuon << endl;
+			cout << "ID cua sach muon: " << idsachmuon << endl;
+			cout << "Ten cua sach muon: " << tensachmuon << endl;
+			cout << "Ngay muon sach: " << ngaymuon << endl;
+			cout << "Ngay tra sach: " << ngaytra << endl;
+			cout << " So tien phat: " << 10000*(ngaytra.tinhngay(ngaymuon)-7) << " dong" << endl;
+			
+		}
 
 		cout << "******************************************" << endl;
 	}
