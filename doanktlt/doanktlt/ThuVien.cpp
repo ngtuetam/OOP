@@ -321,7 +321,7 @@ void ThuVien::xuat_doctufilethe(ifstream& is)
 		cout << "******************************************" << endl;
 	}
 
-	cout << "\nDanh sach cac phieu muon doc tu file ListCards.txt" << endl;
+	cout << "\nDanh sach cac phieu muon doc tu file dsachThe.txt" << endl;
 	cout << endl;
 	while (true)
 	{
