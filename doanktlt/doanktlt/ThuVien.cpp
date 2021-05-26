@@ -55,24 +55,6 @@ void ThuVien::xuat_doctufilesach(ifstream& is)
 	}
 }
 
-void xoasach(int counter) 
-{
-	system("cls");
-	string id;
-	cout << "Nhap ID sach can xoa: ";
-	cin.ignore();
-	getline(cin, id);
-
-	
-}
-
-
-
-
-
-
-
-
 
 void ThuVien::TimsachbangID()
 {
