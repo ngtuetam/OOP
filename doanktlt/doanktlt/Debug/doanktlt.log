@@ -1,14 +1,1 @@
-﻿  Ngay.cpp
-  ThuVien.cpp
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(17,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(85,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(129,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(176,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(190,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(232,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(276,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(322,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\DELL\Desktop\qltv\oop\doanktlt\doanktlt\ThuVien.cpp(336,20): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  doanktlt.vcxproj -> C:\Users\DELL\Desktop\qltv\oop\doanktlt\Debug\doanktlt.exe
+﻿  doanktlt.vcxproj -> C:\Users\DELL\Desktop\qltv\oop\doanktlt\Debug\doanktlt.exe

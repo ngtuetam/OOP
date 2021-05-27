@@ -10,3 +10,7 @@ Vo Duy Phuc
 Tin hieu he thong
 Le Thi Phuong Mai
 70000
+001
+Toan
+Ngo Bao Chau
+90000
